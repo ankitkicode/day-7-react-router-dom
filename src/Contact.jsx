@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
+  const navigate = useNavigate()
   // State for form fields
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -11,6 +13,7 @@ const Contact = () => {
     event.preventDefault();
     // Handle form submission logic here (e.g., sending data to backend)
     console.log("Form submitted:", { name, email, message });
+    navigate('/')
     // Reset form fields after submission
     setName('');
     setEmail('');

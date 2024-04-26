@@ -10,7 +10,7 @@ const Home = () => {
         Duis lobortis sem id eros tincidunt, eu ultricies elit condimentum. Donec ac eros a velit gravida accumsan. 
         Curabitur vel tortor ut nisl varius efficitur a at justo. Nulla facilisi.
       </p>
-      <p className="mt-4">Feel free to explore our courses!</p>
+      <p  className='py-2 px-4 mt-4 bg-gray-950 w-[27%] text-white' >Feel free to explore our courses!</p>
     </div>
   );
 }
